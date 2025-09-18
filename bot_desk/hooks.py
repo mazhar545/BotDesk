@@ -248,22 +248,33 @@ override_doctype_dashboards = {
 fixtures = [
     {
         "dt": "Client Script",
-        "filters": [
-            ["name", "in", [
-                "Customer Auto Fetch Specification",
-                "Customer Auto Fetch Measurement form",
-                "btn on Specification Form",
-                "btn on measuremnt form",
-                "Measurement Customer",
-                "Pocket Design Script",
-                "specification icon",
-                "Button Script",
-                "Culf Design Script",
-                "Placket Script Design",
-                "order form btn",
-                "Measurement",
-            ]]
-        ]
-    }
+        "filters": [["name", "in", [
+            "Customer Auto Fetch Specification",
+            "Customer Auto Fetch Measurement form",
+            "btn on Specification Form",
+            "btn on measuremnt form",
+            "Measurement Customer",
+            "Pocket Design Script",
+            "specification icon",
+            "Button Script",
+            "Culf Design Script",
+            "Placket Script Design",
+            "order form btn",
+            "Measurement",
+    ]]]},
+    {
+        "dt": "Print Format",
+        "filters": [["name", "in", [
+            "Sale Invoice Measurement",
+            "Order Form Format",
+            "Sale Invoice(AQT)"
+    ]]]},
+    # If these prints use a Letter Head, include it too (optional):
+    # {"dt": "Letter Head", "filters": [["module", "=", "BotDesk"]]},
+    # If you’ve set defaults via Property Setter, include them (optional):
+    # {"dt": "Property Setter", "filters": [
+    #     ["doc_type", "in", ["Sales Invoice", "Order Form"]],
+    #     ["property", "=", "default_print_format"]
+    # ]},
 ]
 
