@@ -1,0 +1,238 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{measurement_name}-Measurement-{YYYY}-{#####}",
+ "creation": "2025-09-04 09:14:53.675467",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "customer_email",
+  "column_break_bebf",
+  "customer_mobile",
+  "custom_field",
+  "measurement_name",
+  "measurements_section",
+  "height_column",
+  "height",
+  "quantum_expansion_5",
+  "collar_type_10",
+  "cbc",
+  "sleeve_hem_width",
+  "column_break_lkwh",
+  "the_shoulder",
+  "middle_6",
+  "item_9",
+  "chest_pocket_type_11",
+  "bottom_hem_width",
+  "column_break_bcrd",
+  "plain_sleeve_length",
+  "neck_7",
+  "plain_sleeve_length_3",
+  "hem_width",
+  "column_break_ilgj",
+  "cuff_sleeve_length_4",
+  "step_8",
+  "embroidery",
+  "collar_size"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_bebf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer.mobile_no",
+   "fieldname": "customer_mobile",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer mobile",
+   "translatable": 1
+  },
+  {
+   "fetch_from": "customer.email_id",
+   "fieldname": "customer_email",
+   "fieldtype": "Data",
+   "label": "Customer Email",
+   "translatable": 1
+  },
+  {
+   "fieldname": "custom_field",
+   "fieldtype": "Data",
+   "label": "Custom Field"
+  },
+  {
+   "fieldname": "measurements_section",
+   "fieldtype": "Section Break",
+   "label": "Measurements"
+  },
+  {
+   "fieldname": "height_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Data",
+   "label": "Front Length",
+   "translatable": 1
+  },
+  {
+   "fieldname": "column_break_lkwh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "the_shoulder",
+   "fieldtype": "Data",
+   "label": "Back Length",
+   "translatable": 1
+  },
+  {
+   "fieldname": "column_break_bcrd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plain_sleeve_length",
+   "fieldtype": "Data",
+   "label": "Shoulder Width",
+   "translatable": 1
+  },
+  {
+   "fieldname": "column_break_ilgj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cuff_sleeve_length_4",
+   "fieldtype": "Data",
+   "label": "Sleeve Length (Plain Cuff)",
+   "translatable": 1
+  },
+  {
+   "fieldname": "quantum_expansion_5",
+   "fieldtype": "Data",
+   "label": "Sleeve Length (French Cuff)",
+   "translatable": 1
+  },
+  {
+   "fieldname": "middle_6",
+   "fieldtype": "Data",
+   "label": "Upper Arm Width",
+   "translatable": 1
+  },
+  {
+   "fieldname": "neck_7",
+   "fieldtype": "Data",
+   "label": "Mid Arm Width",
+   "translatable": 1
+  },
+  {
+   "fieldname": "step_8",
+   "fieldtype": "Data",
+   "label": "Wrist Width",
+   "translatable": 1
+  },
+  {
+   "fieldname": "collar_type_10",
+   "fieldtype": "Data",
+   "label": "Cuff Opening Width",
+   "translatable": 1
+  },
+  {
+   "fieldname": "item_9",
+   "fieldtype": "Data",
+   "label": "Cuff Depth"
+  },
+  {
+   "fieldname": "plain_sleeve_length_3",
+   "fieldtype": "Data",
+   "label": "Chest Panel Width",
+   "translatable": 1
+  },
+  {
+   "fieldname": "embroidery",
+   "fieldtype": "Data",
+   "label": "Chest Circumference",
+   "translatable": 1
+  },
+  {
+   "fieldname": "cbc",
+   "fieldtype": "Data",
+   "label": "Waist Circumference",
+   "translatable": 1
+  },
+  {
+   "fieldname": "chest_pocket_type_11",
+   "fieldtype": "Data",
+   "label": "Hip Circumference",
+   "translatable": 1
+  },
+  {
+   "fieldname": "measurement_name",
+   "fieldtype": "Link",
+   "label": "Measurement Name",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "hem_width",
+   "fieldtype": "Data",
+   "label": "Hem Width",
+   "translatable": 1
+  },
+  {
+   "fieldname": "collar_size",
+   "fieldtype": "Data",
+   "label": "Collar Size",
+   "translatable": 1
+  },
+  {
+   "fieldname": "sleeve_hem_width",
+   "fieldtype": "Data",
+   "label": "Sleeve Hem Width",
+   "translatable": 1
+  },
+  {
+   "fieldname": "bottom_hem_width",
+   "fieldtype": "Data",
+   "label": "Bottom Hem Width",
+   "translatable": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-16 13:27:11.122550",
+ "modified_by": "Administrator",
+ "module": "BotDesk",
+ "name": "Measurement",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

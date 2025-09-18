@@ -1,0 +1,76 @@
+:root { --bot-desk-css-flag: loaded; }
+
+/* Target the real class used by Desk: .number-widget */
+.frappe-workspace .widget.number-widget,
+.workspace .widget.number-widget {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  background: var(--card-bg, linear-gradient(135deg,#111827,#1f2937)) !important; /* outer bg */
+  color: #fff;
+}
+
+/* Kill inner white card backgrounds and center content */
+.frappe-workspace .widget.number-widget .card,
+.workspace .widget.number-widget .card {
+  background: transparent !important;
+  border: 0 !important;
+}
+.frappe-workspace .widget.number-widget .card-body,
+.workspace .widget.number-widget .card-body {
+  background: transparent !important;
+  border: 0 !important;
+  display: grid !important;
+  place-items: center !important;
+  text-align: center;
+  padding: 18px 16px;
+  min-height: 110px;
+}
+
+/* Big number */
+.frappe-workspace .widget.number-widget .number,
+.workspace .widget.number-widget .number {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0;
+}
+
+/* Optional label/trend */
+.frappe-workspace .widget.number-widget .label,
+.workspace .widget.number-widget .label { margin-top: 8px; font-size: 12px; font-weight: 600; opacity: .9; }
+.frappe-workspace .widget.number-widget .stat,
+.workspace .widget.number-widget .stat  { margin-top: 6px; font-size: 11px; opacity: .85; }
+
+/* Flair + hover */
+.frappe-workspace .widget.number-widget::after,
+.workspace .widget.number-widget::after {
+  content:""; position:absolute; right:-20px; top:-20px;
+  width:110px; height:110px; border-radius:50%;
+  background: rgba(255,255,255,.08);
+}
+.frappe-workspace .widget.number-widget:hover,
+.workspace .widget.number-widget:hover {
+  transform: translateY(-2px);
+  transition: transform .18s ease, box-shadow .18s ease;
+  box-shadow: 0 14px 30px rgba(0,0,0,.12);
+}
+
+/* Per-card colors (use whichever selector matches your DOM) */
+.frappe-workspace .widget.number-widget[data-widget-name="TOTAL SALE INVOICES"],
+.workspace .widget.number-widget[data-widget-name="TOTAL SALE INVOICES"],
+/* Chrome supports :has — this variant works if titles are in .widget-title */
+.frappe-workspace .widget.number-widget:has(.widget-title[title="TOTAL SALE INVOICES"]),
+.workspace .widget.number-widget:has(.widget-title[title="TOTAL SALE INVOICES"]) {
+  --card-bg: linear-gradient(135deg,#2563eb,#1e40af);
+}
+
+.frappe-workspace .widget.number-widget[data-widget-name="TOTAL ITEMS"],
+.workspace .widget.number-widget[data-widget-name="TOTAL ITEMS"],
+.frappe-workspace .widget.number-widget:has(.widget-title[title="TOTAL ITEMS"]),
+.workspace .widget.number-widget:has(.widget-title[title="TOTAL ITEMS"]) {
+  --card-bg: linear-gradient(135deg,#6d28d9,#4c1d95);
+}
+
+/* Add more per-title rules as you like… */

@@ -1,0 +1,277 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{measurement_name}-Measurement-{YYYY}-{#####}",
+ "creation": "2025-09-04 13:30:03.450388",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "customer_email",
+  "column_break_asaf",
+  "customer_mobile",
+  "measurement_name",
+  "section_break_ybzy",
+  "column_break_arnd",
+  "button_colour",
+  "placket_button_straight",
+  "placket_button_pointed",
+  "placket_plain_straight",
+  "placket_plain_pointed",
+  "placket_zip_straight",
+  "placket_zip_pointed",
+  "colour",
+  "culf_design",
+  "round",
+  "square",
+  "angled_mitered",
+  "design",
+  "column_break_npff",
+  "collar_shape",
+  "nehru_collar",
+  "tab_collar",
+  "band_chinese",
+  "button_down_collar",
+  "wing_collar",
+  "collar_design",
+  "button_size",
+  "cuff_plain",
+  "cuff_single_button",
+  "cuff_double_button",
+  "cuff_french",
+  "btn",
+  "section_break_xmjp",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_asaf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer.mobile_no",
+   "fieldname": "customer_mobile",
+   "fieldtype": "Data",
+   "label": "Customer Mobile"
+  },
+  {
+   "fetch_from": "customer.email_id",
+   "fieldname": "customer_email",
+   "fieldtype": "Data",
+   "label": "Customer Email"
+  },
+  {
+   "fieldname": "section_break_ybzy",
+   "fieldtype": "Section Break",
+   "label": "Specifications"
+  },
+  {
+   "fieldname": "btn",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Button Small/Large"
+  },
+  {
+   "fieldname": "column_break_npff",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_arnd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "colour",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "colour"
+  },
+  {
+   "fieldname": "button_colour",
+   "fieldtype": "Heading",
+   "label": "Placket Design"
+  },
+  {
+   "fieldname": "culf_design",
+   "fieldtype": "Heading",
+   "label": "Pocket Design"
+  },
+  {
+   "fieldname": "button_size",
+   "fieldtype": "Heading",
+   "label": "Cuff Design"
+  },
+  {
+   "fieldname": "design",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Design"
+  },
+  {
+   "fieldname": "measurement_name",
+   "fieldtype": "Link",
+   "label": "Specification Name",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "collar_shape",
+   "fieldtype": "Heading",
+   "label": "Collar Shape"
+  },
+  {
+   "default": "0",
+   "fieldname": "nehru_collar",
+   "fieldtype": "Check",
+   "label": "Regular Collar"
+  },
+  {
+   "default": "0",
+   "fieldname": "tab_collar",
+   "fieldtype": "Check",
+   "label": "Mandarin Collar"
+  },
+  {
+   "default": "0",
+   "fieldname": "button_down_collar",
+   "fieldtype": "Check",
+   "label": "French Collar"
+  },
+  {
+   "default": "0",
+   "fieldname": "wing_collar",
+   "fieldtype": "Check",
+   "label": "Classic Collar"
+  },
+  {
+   "default": "0",
+   "fieldname": "band_chinese",
+   "fieldtype": "Check",
+   "label": "Classic Collar 2"
+  },
+  {
+   "fieldname": "collar_design",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Collar Design"
+  },
+  {
+   "default": "0",
+   "fieldname": "cuff_plain",
+   "fieldtype": "Check",
+   "label": "Plain Cuff"
+  },
+  {
+   "default": "0",
+   "fieldname": "cuff_single_button",
+   "fieldtype": "Check",
+   "label": "Plain Open Cuff"
+  },
+  {
+   "default": "0",
+   "fieldname": "cuff_double_button",
+   "fieldtype": "Check",
+   "label": "Formal Cufflinks"
+  },
+  {
+   "default": "0",
+   "fieldname": "cuff_french",
+   "fieldtype": "Check",
+   "label": "French Cufflinks"
+  },
+  {
+   "default": "0",
+   "fieldname": "placket_button_straight",
+   "fieldtype": "Check",
+   "label": "Visible Square Tab"
+  },
+  {
+   "default": "0",
+   "fieldname": "placket_button_pointed",
+   "fieldtype": "Check",
+   "label": "Visible Triangle Tab"
+  },
+  {
+   "default": "0",
+   "fieldname": "placket_plain_straight",
+   "fieldtype": "Check",
+   "label": "Hidden Square Tab"
+  },
+  {
+   "default": "0",
+   "fieldname": "placket_plain_pointed",
+   "fieldtype": "Check",
+   "label": "Hidden Triangle Tab"
+  },
+  {
+   "default": "0",
+   "fieldname": "placket_zip_straight",
+   "fieldtype": "Check",
+   "label": "Zipper with Square Tab"
+  },
+  {
+   "default": "0",
+   "fieldname": "placket_zip_pointed",
+   "fieldtype": "Check",
+   "label": "Zipper with Triangular Tab"
+  },
+  {
+   "default": "0",
+   "fieldname": "square",
+   "fieldtype": "Check",
+   "label": "Round"
+  },
+  {
+   "default": "0",
+   "fieldname": "angled_mitered",
+   "fieldtype": "Check",
+   "label": "Beveled/Slanted"
+  },
+  {
+   "default": "0",
+   "fieldname": "round",
+   "fieldtype": "Check",
+   "label": "Hidden"
+  },
+  {
+   "fieldname": "section_break_xmjp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Long Text",
+   "label": "Notes"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-16 13:31:21.804864",
+ "modified_by": "Administrator",
+ "module": "BotDesk",
+ "name": "Specification",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

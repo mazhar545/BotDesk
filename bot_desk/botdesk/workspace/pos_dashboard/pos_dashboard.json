@@ -1,0 +1,94 @@
+{
+ "charts": [
+  {
+   "chart_name": "Order Form In Progress",
+   "label": "In Progress Order Forms"
+  },
+  {
+   "chart_name": "Order form pending",
+   "label": "Pending Order Forms"
+  },
+  {
+   "chart_name": "Completed Order Forms",
+   "label": "Completed Order Forms"
+  },
+  {
+   "chart_name": "Delivered Order Forms",
+   "label": "Delivered Order Forms"
+  }
+ ],
+ "content": "[{\"id\":\"Jb6b1onwvK\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">     <span class=\\\"h5\\\">                          <b><i>   <span class=\\\"h1\\\">Owner Dashboard</span></i></b></span><span class=\\\"h1\\\"><b></b></span></span>\",\"col\":12}},{\"id\":\"-uCH-alB3r\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h2\\\"><b>Quick Lists</b></span>\",\"col\":12}},{\"id\":\"ffeP-qFkQ7\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"<h3>Measurements</h3>\",\"col\":4}},{\"id\":\"QpsyNuJVZZ\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"<h3>Specifications</h3>\",\"col\":4}},{\"id\":\"845ZdmCuAe\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"<h3>Order Forms</h3>\",\"col\":4}},{\"id\":\"3Z6KhQHo_F\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"<h3>Sale Invoices</h3>\",\"col\":4}},{\"id\":\"Yj39S_XRqd\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"<h3>Total Customers</h3>\",\"col\":4}},{\"id\":\"IbPqPnXvwm\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"<h3>Total Users</h3>\",\"col\":4}},{\"id\":\"9wHublr9TO\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"<h3>Total Measurements</h3>\",\"col\":6}},{\"id\":\"pZeMuf-6Hq\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"<h3>Total Order Forms</h3>\",\"col\":6}},{\"id\":\"d-gxMvGEhV\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"<h3>Total Specifications</h3>\",\"col\":6}},{\"id\":\"xZcJTolmZd\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"<h3>Total Sale Invoices</h3>\",\"col\":6}},{\"id\":\"QGcnAV4_OI\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Pending Order Forms\",\"col\":12}},{\"id\":\"Yu0nmpQlvV\",\"type\":\"chart\",\"data\":{\"chart_name\":\"In Progress Order Forms\",\"col\":12}},{\"id\":\"n8xT6MjHkM\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Pending Order Forms\",\"col\":12}},{\"id\":\"EMv8jfXyTa\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Completed Order Forms\",\"col\":12}},{\"id\":\"kgMToVV30B\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Delivered Order Forms\",\"col\":12}}]",
+ "creation": "2025-09-03 11:20:56.024868",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "table",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "POS dashboard",
+ "links": [],
+ "modified": "2025-09-18 11:14:08.400172",
+ "modified_by": "Administrator",
+ "module": "BotDesk",
+ "name": "POS dashboard",
+ "number_cards": [
+  {
+   "label": "<h3>Total Measurements</h3>",
+   "number_card_name": "Total Measurements"
+  },
+  {
+   "label": "<h3>Total Sale Invoices</h3>",
+   "number_card_name": "Total Sale Invoices"
+  },
+  {
+   "label": "<h3>Total Order Forms</h3>",
+   "number_card_name": "Total Order Forms"
+  },
+  {
+   "label": "<h3>Total Specifications</h3>",
+   "number_card_name": "Total Specifications"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Customer",
+   "label": "<h3>Total Customers</h3>",
+   "quick_list_filter": "[]"
+  },
+  {
+   "document_type": "User",
+   "label": "<h3>Total Users</h3>",
+   "quick_list_filter": "[]"
+  },
+  {
+   "document_type": "Measurement",
+   "label": "<h3>Measurements</h3>",
+   "quick_list_filter": "[]"
+  },
+  {
+   "document_type": "Specification",
+   "label": "<h3>Specifications</h3>",
+   "quick_list_filter": "[]"
+  },
+  {
+   "document_type": "Order Form",
+   "label": "<h3>Order Forms</h3>",
+   "quick_list_filter": "[]"
+  },
+  {
+   "document_type": "Sales Invoice",
+   "label": "<h3>Sale Invoices</h3>",
+   "quick_list_filter": "[]"
+  }
+ ],
+ "roles": [],
+ "sequence_id": 28.0,
+ "shortcuts": [],
+ "title": "POS dashboard"
+}
