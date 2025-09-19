@@ -246,6 +246,7 @@ override_doctype_dashboards = {
     "Customer": "bot_desk.customer_dashboard.get_data"
 }
 fixtures = [
+    # --- existing ---
     {
         "dt": "Client Script",
         "filters": [["name", "in", [
@@ -261,20 +262,59 @@ fixtures = [
             "Placket Script Design",
             "order form btn",
             "Measurement",
-    ]]]},
+        ]]]
+    },
     {
         "dt": "Print Format",
         "filters": [["name", "in", [
             "Sale Invoice Measurement",
             "Order Form Format",
             "Sale Invoice(AQT)"
-    ]]]},
-    # If these prints use a Letter Head, include it too (optional):
-    # {"dt": "Letter Head", "filters": [["module", "=", "BotDesk"]]},
-    # If you’ve set defaults via Property Setter, include them (optional):
-    # {"dt": "Property Setter", "filters": [
-    #     ["doc_type", "in", ["Sales Invoice", "Order Form"]],
-    #     ["property", "=", "default_print_format"]
-    # ]},
-]
+        ]]]
+    },
 
+    # --- added: Number Cards ---
+    {
+        "dt": "Number Card",
+        "filters": [["name", "in", [
+            "Total Specifications",
+            "Total Order Forms",
+            "Total Measurements",
+            "Total Sale Invoices"
+        ]]]
+    },
+
+    # --- added: Dashboard Charts (edit names if your chart titles differ) ---
+    {
+        "dt": "Dashboard Chart",
+        "filters": [["name", "in", [
+            "Delivered Order Forms",
+            "Completed Order Forms",
+            "Order Form In Progress",
+            "Order form pending"
+        ]]]
+    },
+
+    # --- optional but recommended (your custom fields used in scripts) ---
+    {
+        "dt": "Custom Field",
+        "filters": [["name", "in", [
+            "Sales Invoice-measurement",
+            "Sales Invoice Item-measurement",
+            "Sales Invoice Item-specification",
+        ]]]
+    },
+
+    # --- optional: include if you set default print format via Customize Form ---
+    # {
+    #     "dt": "Property Setter",
+    #     "filters": [
+    #         ["doc_type", "in", ["Sales Invoice", "Order Form"]],
+    #         ["property", "=", "default_print_format"]
+    #     ]
+    # },
+
+    # --- optional: include if you place cards/charts on a Dashboard/Workspace ---
+    # {"dt": "Dashboard", "filters": [["module", "=", "BotDesk"]]},
+    # {"dt": "Workspace", "filters": [["module", "=", "BotDesk"]]},
+]
