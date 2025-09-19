@@ -300,8 +300,8 @@ fixtures = [
         "dt": "Custom Field",
         "filters": [["name", "in", [
             "Sales Invoice-measurement",
-            "Sales Invoice Item-measurement",
-            "Sales Invoice Item-specification",
+            "Sales Invoice Item-custom_measurement",
+            "Sales Invoice Item-custom_specification",
         ]]]
     },
 
