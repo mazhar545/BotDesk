@@ -294,6 +294,13 @@ fixtures = [
             "Order form pending"
         ]]]
     },
+    {
+        "doctype": "Translation",
+        # Export ONLY rows you tagged above:
+        "filters": [
+            ["_user_tags", "like", "%botdesk_translations%"]
+        ],
+    },
 
     # --- optional but recommended (your custom fields used in scripts) ---
     {
